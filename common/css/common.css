@@ -199,8 +199,8 @@ h1{
 /* about */
 .about{
     background: url(../img/front/about_bg_1.png), url(../img/front/about_bg_2.png);
-    background-position: left -10vw center, right -10vw center;
-    background-size: 40% auto, 40% auto;
+    background-position: left 0vw center, right 0vw center;
+    background-size: 30% auto, 30% auto;
     background-repeat: no-repeat, no-repeat;
     padding-bottom: 100px;
 }
@@ -225,14 +225,6 @@ h1{
     margin: 0 auto;
 }
 
-.about .about__container .content_title_a{
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    width: 80vw;
-    max-width: 1080px;
-    margin: 0 auto;
-}
 
 .about .about__container .content_title_a .pc_ttl{
     display: block;
