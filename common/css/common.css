@@ -1376,6 +1376,12 @@ h1{
 
     /* sp-over-ride */
 
+
+    .campaign .campaign__container .application__container .step .content:first-child::after {
+        bottom: -25px;
+        border-top: 20px solid #005baf;
+    }
+
     .rwd #main-contents .front-mv{
         padding-bottom: 60vw;
         position: relative;
