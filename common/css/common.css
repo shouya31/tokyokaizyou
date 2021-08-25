@@ -568,10 +568,10 @@ h1{
     content: '';
     position: absolute;
     top: 50%;
-    right: -25.5%;
+    right: -26.5%;
     border: none;
     transform: rotate(-90deg);
-    border-top: 30px solid #0097e5;
+    border-top: 25px solid #005baf;
     border-right: 90px solid transparent;
     border-left: 90px solid transparent;;
 }
