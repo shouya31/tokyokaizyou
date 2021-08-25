@@ -167,10 +167,11 @@ h1{
 }
 
 #fix_btn a{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    background: #fff45c;
+    background: #ffffff;
+    border: solid #3d90ca 4px;
     display: flex;
     align-items: center;
     justify-content: center;
