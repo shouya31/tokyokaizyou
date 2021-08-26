@@ -33,9 +33,6 @@ h1{
 
 .rwd #main-contents .front-mv .front-mv__container{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .rwd #main-contents .front-mv .front-mv__container .top_title{
@@ -64,57 +61,88 @@ h1{
 }
 
 .rwd #main-contents .front-mv .front-mv__container .top_title .pc_ttl img{
-    margin-top: 15%;
     width: 100%;
 }
 
-.top_application-period_text{
-    background-image: url(../img/front/campaign_img_1.png);
-    background-repeat: no-repeat;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    width: 150px;
-    height: 80px;
-    text-align: center;
-    line-height: 3.5;
-    margin: 0;
+/* scroll */
+.scrolldown1{
+  position:absolute;
+  left:50%;
+  bottom: 32%;
 }
 
-.top_date{
-    color: #005baf;
-    font-size: 12px;
-    font-weight: bold;
+@media screen and (min-width: 2050px){
+    .scrolldown1{
+        bottom: 10%;
+    }
+}
+.scrolldown1 span{
+  position: absolute;
+  left:-20px;
+  top: -30px;
+  color: #005baf;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 
-.sp-top_num-br{
+.scrolldown1::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 75px;
+  background: #005baf;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:40px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:75px;
+    opacity: 0;
+  }
+}
+
+/* artist_link */
+.artist_link{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.artist_link .artist_link_inner{
+    width: 40vw;
+    position: relative;
+    right: 20px;
+}
+
+.artist_link .artist_link_inner img{
+    width: 100%;
+}
+
+.artist_link .artist_link_inner_sp{
     display: none;
 }
 
-.top_num{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    letter-spacing: 0.025em;
+a.anchor{
+    display: block;
+    padding-top: 10px;
+    margin-top: -10px;
 }
 
-.top_week{
-    font-size: 18px;
-    padding: 2px 5px;
-    display: inline-block;
-    position: relative;
-    bottom: 3px;
-    background-color: #005baf;
-    color: #ffffff;
-    margin: 2px;
-}
-
-
-.anchor-link{
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-}
 /* fix_btn */
 #fix_btn{
     position: fixed;
@@ -166,11 +194,10 @@ h1{
 }
 
 #fix_btn a{
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: #ffffff;
-    border: solid #3d90ca 4px;
+    background: #fff45c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,8 +225,8 @@ h1{
 /* about */
 .about{
     background: url(../img/front/about_bg_1.png), url(../img/front/about_bg_2.png);
-    background-position: left 0vw center, right 0vw center;
-    background-size: 30% auto, 30% auto;
+    background-position: left -10vw center, right -10vw center;
+    background-size: 40% auto, 40% auto;
     background-repeat: no-repeat, no-repeat;
     padding-bottom: 100px;
 }
@@ -224,6 +251,14 @@ h1{
     margin: 0 auto;
 }
 
+.about .about__container .content_title_a{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    width: 80vw;
+    max-width: 1080px;
+    margin: 0 auto;
+}
 
 .about .about__container .content_title_a .pc_ttl{
     display: block;
@@ -568,10 +603,10 @@ h1{
     content: '';
     position: absolute;
     top: 50%;
-    right: -26.5%;
+    right: -25.5%;
     border: none;
     transform: rotate(-90deg);
-    border-top: 25px solid #005baf;
+    border-top: 30px solid #0097e5;
     border-right: 90px solid transparent;
     border-left: 90px solid transparent;;
 }
@@ -692,32 +727,72 @@ h1{
 .campaign .campaign__container .application__container .app_image{
     max-width: 850px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 
-.triangle-blue{
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.triangle-blue img { 
-    position:absolute;
-}
-
-.triangle-text{
-    color: #fff;
+.campaign .campaign__container .application__container .app_image .img_ttl{
+    font-size: 20px;
     font-weight: bold;
-    position: absolute;
-    z-index: 1;
-    line-height: 1;
+    letter-spacing: 0.1em;
+    padding-bottom: 14px;
+    color: #005baf;
+    border-bottom: 2px solid #005baf;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.ribbon-img{
+.campaign .campaign__container .application__container .app_image .app{
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
 }
+
+.campaign .campaign__container .application__container .app_image .content{
+    background-color: #ffffff;
+    padding: 25px;
+    margin-left: 30px;
+}
+
+.campaign .campaign__container .application__container .app_image .content:first-child{
+    margin-left: 0;
+}
+
+.campaign .campaign__container .application__container .app_image .content .app_img{
+    width: 100%;
+}
+
+.campaign .campaign__container .application__container .app_image .content .app_img img{
+    width: 100%;
+}
+
+.campaign .campaign__container .application__container .app_image .content .icon{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaign .campaign__container .application__container .app_image .content .icon span{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.campaign .campaign__container .application__container .app_image .content .icon span:first-child{
+    padding-left: 0;
+}
+
+.campaign .campaign__container .application__container .app_image .content .app_img_txt{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.campaign .campaign__container .application__container .app_image .content .app_img_txt span{
+    display: block;
+    font-weight: bold;
+}
+
+
 /* rules */
 .rules .rules__container{
     max-width: 1000px;
@@ -897,7 +972,114 @@ h1{
     }
  }
 
+ /* pc-over-ride */
+ /* front-mv */
+.rwd #main-contents .front-mv .front-mv__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.rwd #main-contents .front-mv .front-mv__container .top_title .pc_ttl img{
+  margin-top: 15%;
+}
+
+.top_application-period_text{
+  background-image: url(../img/front/campaign_img_1.png);
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  line-height: 3.5;
+  margin: 0;
+}
+
+.top_date{
+  color: #005baf;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sp-top_num-br{
+  display: none;
+}
+
+.top_num{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.025em;
+}
+
+.top_week{
+  font-size: 18px;
+  padding: 2px 5px;
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+  background-color: #005baf;
+  color: #ffffff;
+  margin: 2px;
+}
+
+.anchor-link{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/* fix_btn */
+
+#fix_btn a{
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  border: solid #3d90ca 4px;
+}
+
+/* about */
+.about{
+  background-position: left 0vw center, right 0vw center;
+  background-size: 30% auto, 30% auto;
+}
+
+/* campaign */
+.campaign .campaign__container .application__container .step .content:first-child::after{
+  right: -26.5%;
+  border-top: 25px solid #005baf;
+}
+
+/* app_image */
+.campaign .campaign__container .application__container .app_image{
+  padding-top: 20px;
+}
+
+.triangle-blue{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.triangle-blue img { 
+  position:absolute;
+}
+
+.triangle-text{
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  line-height: 1;
+}
+
+.ribbon-img{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
 
 /* ---------------
  sp 
@@ -1374,72 +1556,75 @@ h1{
         height: 55px;
     }
 
-    /* sp-over-ride */
+  /* sp-over-ride */
+
+  /* .campaign */
+  .campaign .campaign__container .application__container .step .content:first-child::after {
+    bottom: -25px;
+    border-top: 20px solid #005baf;
+  }
+
+  /* artist_link */
+  .rwd #main-contents .front-mv{
+      padding-bottom: 60vw;
+      position: relative;
+  }
+
+  /* front-mv */
+  .anchor-link img{
+      margin-top: 95px;
+      width: 80%;
+  }
+
+  .top_application-period_text {
+    background-image: url(../img/front/sp_campaign_img.png);
+    background-size: 80px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    bottom:-125%;
+    width: 85px;
+    line-height: 4;
+}
+
+.top_date {
+    position: absolute;
+    bottom:-135%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.sp-top_num-br{
+    display: block;
+}
+
+.top_num{
+    font-size: 20px;
+}
+
+.top_week{
+    font-size: 10px;
+}
 
 
-    .campaign .campaign__container .application__container .step .content:first-child::after {
-        bottom: -25px;
-        border-top: 20px solid #005baf;
-    }
+  /* campaign */
+  .ribbon-img img{
+      width: 100%;
+  }
 
-    .rwd #main-contents .front-mv{
-        padding-bottom: 60vw;
-        position: relative;
-    }
-
-    .anchor-link img{
-        margin-top: 95px;
-        width: 80%;
-    }
-
-    .ribbon-img img{
-        width: 100%;
-    }
-
-    #fix_btn_sp {
-        display: flex;
-        width: 100%;
-        height: 70px;
-        background-color: #ffffff;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 10000;
-        bottom: 0;
-        border-bottom: solid #005baf 3px;
-        border-top: solid #005baf 3px;
-    }
-
-    .top_application-period_text {
-        background-image: url(../img/front/sp_campaign_img.png);
-        background-size: 80px;
-        color: #ffffff;
-        font-size: 11px;
-        font-weight: bold;
-        position: absolute;
-        bottom:-125%;
-        width: 85px;
-        line-height: 4;
-    }
-
-    .top_date {
-        position: absolute;
-        bottom:-135%;
-        font-size: 10px;
-        text-align: center;
-    }
-
-    .sp-top_num-br{
-        display: block;
-    }
-
-    .top_num{
-        font-size: 20px;
-    }
-    
-    .top_week{
-        font-size: 10px;
-    }
-    
-
+  /* fix_btn */
+  #fix_btn_sp {
+      display: flex;
+      width: 100%;
+      height: 70px;
+      background-color: #ffffff;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 10000;
+      bottom: 0;
+      border-bottom: solid #005baf 3px;
+      border-top: solid #005baf 3px;
+  }
 }
