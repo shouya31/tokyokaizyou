@@ -1716,4 +1716,9 @@ sp
         border-bottom: solid #005baf 3px;
         border-top: solid #005baf 3px;
     }
+
+    /* about */
+    .about .about__container .about_txt {
+        font-size: 14px;
+    }
 }
