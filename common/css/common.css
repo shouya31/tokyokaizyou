@@ -1097,6 +1097,10 @@ a.anchor{
     border-top: 25px solid #005baf;
 }
 
+.campaign .campaign__container .application__container .step .content .content_small .sc_step_img{
+    display: none;
+}
+
 /* app_image */
 .campaign .campaign__container .application__container .app_image{
     padding-top: 20px;
@@ -1617,6 +1621,14 @@ sp
         border-top: 20px solid #005baf;
     }
 
+    .campaign .campaign__container .application__container .step .content .content_small .sc_step_img{
+        display: block;
+    }
+
+    .campaign .campaign__container .application__container .step .content .content_small .pc_step_img{
+        display: none;
+    }
+
   /* artist_link */
     .rwd #main-contents .front-mv{
         padding-bottom: 60vw;
@@ -1624,41 +1636,65 @@ sp
     }
 
   /* front-mv */
+
+    .rwd #main-contents .front-mv .front-mv__container .top_title {
+        top: 10vw;
+    }
+
+    .rwd #main-contents .front-mv .front-mv__container .top_title .pc_ttl {
+        display: none!important;
+    }
+
+    .rwd #main-contents .front-mv .front-mv__container .top_title .sp_ttl {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rwd #main-contents .front-mv .front-mv__container .top_title .sp_ttl img{
+        width: 90%;
+    }
+
     .anchor-link img{
-        margin-top: 95px;
-        width: 80%;
+        margin-left: 7%;
+        margin-top: 20%;
+        width: 70%;
     }
 
     .top_application-period_text {
         background-image: url(../img/front/sp_campaign_img.png);
-        background-size: 80px;
+        background-size: 75px;
         color: #ffffff;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
         position: absolute;
-        bottom:-125%;
-        width: 85px;
+        bottom: -115%;
+        width: 78px;
         line-height: 4;
     }
 
-.top_date {
-    position: absolute;
-    bottom:-135%;
-    font-size: 10px;
-    text-align: center;
-}
+    .top_date {
+        position: absolute;
+        bottom:-131%;
+        font-size: 10px;
+        text-align: center;
+    }
 
-.sp-top_num-br{
-    display: block;
-}
+    .sp-top_num-br{
+        display: block;
+    }
 
-.top_num{
-    font-size: 20px;
-}
+    .top_num{
+        font-size: 19px;
+    }
 
-.top_week{
-    font-size: 10px;
-}
+    .top_week{
+        font-size: 9px;
+    }
+
+    /* artist */
+    .artist .artist__container .artist_content_1 .artist_prof .inner .prof_ttl {
+        font-size: 12px;
+    }
 
 
   /* campaign */
