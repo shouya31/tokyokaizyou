@@ -974,115 +974,168 @@ a.anchor{
 
  /* pc-over-ride */
  /* front-mv */
+.rwd #main-contents .front-mv{
+    background-size: contain;
+}
+
 .rwd #main-contents .front-mv .front-mv__container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rwd #main-contents .front-mv .front-mv__container .top_title{
+    min-height: 0;
+}
+
+.pc_ttl{
+    margin-top:6%;
+    display: flex!important;
+    justify-content: center;
 }
 
 .rwd #main-contents .front-mv .front-mv__container .top_title .pc_ttl img{
-  margin-top: 15%;
+    width: 70%;
 }
 
 .top_application-period_text{
-  background-image: url(../img/front/campaign_img_1.png);
-  background-repeat: no-repeat;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  width: 150px;
-  height: 80px;
-  text-align: center;
-  line-height: 3.5;
-  margin: 0;
+    background-image: url(../img/front/campaign_img_1.png);
+    background-repeat: no-repeat;
+    background-size: 115px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 3;
+    margin: 0;
 }
 
 .top_date{
-  color: #005baf;
-  font-size: 12px;
-  font-weight: bold;
+    color: #005baf;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 0;
 }
 
 .sp-top_num-br{
-  display: none;
+    display: none;
 }
 
 .top_num{
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  letter-spacing: 0.025em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    letter-spacing: 0.025em;
 }
 
 .top_week{
-  font-size: 18px;
-  padding: 2px 5px;
-  display: inline-block;
-  position: relative;
-  bottom: 3px;
-  background-color: #005baf;
-  color: #ffffff;
-  margin: 2px;
+    font-size: 17px;
+    padding: 2px 5px;
+    display: inline-block;
+    position: relative;
+    bottom: 3px;
+    background-color: #005baf;
+    color: #ffffff;
+    margin: 2px;
 }
 
 .anchor-link{
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.anchor-link img{
+    width: 25%;
+    margin-top: 0.5%;
 }
 
 /* fix_btn */
 
 #fix_btn a{
-  width: 45px;
-  height: 45px;
-  background: #ffffff;
-  border: solid #3d90ca 4px;
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    border: solid #3d90ca 4px;
 }
 
 /* about */
 .about{
-  background-position: left 0vw center, right 0vw center;
-  background-size: 30% auto, 30% auto;
+    background-position: left 0vw bottom 17vh, right 0vw bottom 13vh;
+    background-size: 30% auto, 30% auto;
 }
+
+.about .about__container .about_txt {
+    margin-top: 5%;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+/* artist */
+.artist .artist__container .artist_content_1 .container {
+    max-width: 735px;
+}
+
+.artist .artist__container .artist_content_1::after {
+    max-width: 840px;
+    margin: auto;
+}
+
+.artist .artist__container .artist_content_1 .artist_prof .artist_content_ttl {
+    font-size: 28px;
+}
+
+.artist .artist__container .artist_content_1 .artist_prof .artist_content_ttl span{
+    font-size: 20px;
+}
+
 
 /* campaign */
 .campaign .campaign__container .application__container .step .content:first-child::after{
-  right: -26.5%;
-  border-top: 25px solid #005baf;
+    right: -26.5%;
+    border-top: 25px solid #005baf;
 }
 
 /* app_image */
 .campaign .campaign__container .application__container .app_image{
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .triangle-blue{
-  display: flex;
-  justify-content: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .triangle-blue img { 
-  position:absolute;
+    position:absolute;
 }
 
 .triangle-text{
-  color: #fff;
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
-  line-height: 1;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    line-height: 1;
 }
 
 .ribbon-img{
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.share .share__container .icon .icon_small {
+    border: none;
+}
+
+.share .share__container .icon .icon_small .icon_img {
+    width: 70px;
 }
 
 /* ---------------
- sp 
+sp 
  --------------- */
 
  @media screen and (max-width:767px){
@@ -1559,34 +1612,34 @@ a.anchor{
   /* sp-over-ride */
 
   /* .campaign */
-  .campaign .campaign__container .application__container .step .content:first-child::after {
-    bottom: -25px;
-    border-top: 20px solid #005baf;
-  }
+    .campaign .campaign__container .application__container .step .content:first-child::after {
+        bottom: -25px;
+        border-top: 20px solid #005baf;
+    }
 
   /* artist_link */
-  .rwd #main-contents .front-mv{
-      padding-bottom: 60vw;
-      position: relative;
-  }
+    .rwd #main-contents .front-mv{
+        padding-bottom: 60vw;
+        position: relative;
+    }
 
   /* front-mv */
-  .anchor-link img{
-      margin-top: 95px;
-      width: 80%;
-  }
+    .anchor-link img{
+        margin-top: 95px;
+        width: 80%;
+    }
 
-  .top_application-period_text {
-    background-image: url(../img/front/sp_campaign_img.png);
-    background-size: 80px;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: bold;
-    position: absolute;
-    bottom:-125%;
-    width: 85px;
-    line-height: 4;
-}
+    .top_application-period_text {
+        background-image: url(../img/front/sp_campaign_img.png);
+        background-size: 80px;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: bold;
+        position: absolute;
+        bottom:-125%;
+        width: 85px;
+        line-height: 4;
+    }
 
 .top_date {
     position: absolute;
@@ -1609,22 +1662,22 @@ a.anchor{
 
 
   /* campaign */
-  .ribbon-img img{
-      width: 100%;
-  }
+    .ribbon-img img{
+        width: 100%;
+    }
 
   /* fix_btn */
-  #fix_btn_sp {
-      display: flex;
-      width: 100%;
-      height: 70px;
-      background-color: #ffffff;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      z-index: 10000;
-      bottom: 0;
-      border-bottom: solid #005baf 3px;
-      border-top: solid #005baf 3px;
-  }
+    #fix_btn_sp {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 10000;
+        bottom: 0;
+        border-bottom: solid #005baf 3px;
+        border-top: solid #005baf 3px;
+    }
 }
