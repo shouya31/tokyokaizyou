@@ -420,4 +420,21 @@
 </body>
 <script type="text/javascript" src="common/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript">
+    function myEnter(){
+       myPassWord=prompt("パスワードを入力してください","");
+       if ( myPassWord == "pass1" ){
+       }else{
+          alert( "パスワードが違います!" );
+          location.href = "secret.html";
+       }
+    }
+    myEnter()
+</script>
+    
+    <form>
+    ここは家族専用です→ 
+    <input type="button" value="Tatsuya家へ" onclick="myEnter()">
+    </form>
+    
 </html>
