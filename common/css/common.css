@@ -1139,6 +1139,34 @@ a.anchor{
     width: 70px;
 }
 
+@media screen and (min-width: 2050px){
+    .rwd #main-contents .front-mv{
+        padding-bottom: 22vw;
+    }
+    .top_application-period_text {
+        position: relative;
+        top:7vh;
+        background-size: 145px;
+        font-size: 25px;
+        width: 150px;
+        height: 73px;
+    }
+
+    .top_date-wrap{
+        position: relative;
+        top:9vh;
+    }
+
+    .anchor-link{
+        position: relative;
+        top: 13vh;
+    }
+
+    .anchor-link img{
+        width: 95%;
+    }
+}
+
 /* ---------------
 sp 
  --------------- */
