@@ -19,7 +19,7 @@ h1{
 
 /* front-mv */
 .rwd #main-contents .front-mv{
-    background: url(../img/front/mv.png) no-repeat top center;
+    background: url(../img/front/mv.jpg) no-repeat top center;
     background-size: cover;
     padding-bottom: 9vw;
 }
@@ -1047,7 +1047,7 @@ a.anchor{
 }
 
 .anchor-link img{
-    width: 28%;
+    width: 71%;
     margin-top: 0.5%;
     margin-left: 30px;
 }
@@ -1063,8 +1063,8 @@ a.anchor{
 
 /* about */
 .about{
-    background-position: left 0vw bottom 17vh, right 0vw bottom 13vh;
-    background-size: 30% auto, 30% auto;
+    background-position: left 0vw bottom 9vh, right 0vw bottom 7vh;
+    background-size: 25% auto, 25% auto;
 }
 
 .about .about__container .about_txt {
@@ -1152,7 +1152,7 @@ sp
     }
     /* fv */
     .rwd #main-contents .front-mv{
-        background: url(../img/front/sp_mv.png) no-repeat top;
+        background: url(../img/front/sp_mv.jpg) no-repeat top;
         background-size: 100%;
         /* min-height: 100vh; */
         padding-bottom: 90vw;
@@ -1639,7 +1639,8 @@ sp
   /* front-mv */
 
     .rwd #main-contents .front-mv .front-mv__container .top_title {
-        top: 10vw;
+        top: 8vw;
+        min-height: 0;
     }
 
     .rwd #main-contents .front-mv .front-mv__container .top_title .pc_ttl {
@@ -1657,7 +1658,7 @@ sp
 
     .anchor-link img{
         margin-left: 7%;
-        margin-top: 20%;
+        margin-top: 10%;
         width: 70%;
     }
 
@@ -1668,14 +1669,23 @@ sp
         font-size: 10px;
         font-weight: bold;
         position: absolute;
-        bottom: -115%;
+        bottom: -35%;
+        left: 50%;
         width: 78px;
         line-height: 4;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .top_date-wrap{
+        position: absolute;
+        bottom: -55%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
     .top_date {
-        position: absolute;
-        bottom:-131%;
         font-size: 10px;
         text-align: center;
     }
@@ -1686,6 +1696,10 @@ sp
 
     .top_num{
         font-size: 19px;
+    }
+
+    _::-webkit-full-page-media, _:future, :root .top_num {
+        font-size: 16px;
     }
 
     .top_week{
