@@ -1639,7 +1639,8 @@ sp
   /* front-mv */
 
     .rwd #main-contents .front-mv .front-mv__container .top_title {
-        top: 10vw;
+        top: 8vw;
+        min-height: 0;
     }
 
     .rwd #main-contents .front-mv .front-mv__container .top_title .pc_ttl {
@@ -1668,7 +1669,7 @@ sp
         font-size: 10px;
         font-weight: bold;
         position: absolute;
-        bottom: -30%;
+        bottom: -35%;
         left: 50%;
         width: 78px;
         line-height: 4;
@@ -1678,7 +1679,7 @@ sp
 
     .top_date-wrap{
         position: absolute;
-        bottom: -45%;
+        bottom: -55%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -1695,6 +1696,10 @@ sp
 
     .top_num{
         font-size: 19px;
+    }
+
+    _::-webkit-full-page-media, _:future, :root .top_num {
+        font-size: 16px;
     }
 
     .top_week{
