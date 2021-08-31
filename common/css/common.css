@@ -1139,6 +1139,10 @@ a.anchor{
     width: 70px;
 }
 
+.rules .rules__container .rules_txt {
+    overflow-x: hidden;
+}
+
 @media screen and (min-width: 2050px){
     .top_application-period_text {
         position: relative;
